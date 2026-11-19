@@ -1,0 +1,111 @@
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #384F5D;
+    margin-bottom: 40px;
+    font-family: Helvetica, Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.navContainer img {
+    display: flex;
+    width: 80px;
+    padding-top: 15px;
+}
+
+.nonmobile-navbar {
+    display: flex;
+    justify-content: center;;
+}
+
+.nonmobile-navbar ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+
+.nonmobile-navbar ul li a {
+    margin: 0 20px 0 0;
+    text-decoration: none;
+    color: #fafafa;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+}
+
+.nonmobile-navbar ul li:last-child a {
+    margin-right: 0;
+}
+
+.nonmobile-navbar ul li a:hover {
+    background-color: #8fa4b7;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.applyNowNav {
+    color: #203040;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+    padding: 11px 13px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  .applyNowNav:hover {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    background-color: #203040;
+  }
+
+@media screen and (max-width: 768px) {
+    .nonmobile-navbar {
+      display: none;
+    }
+    .menu {
+      display: block;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .nonMobileNavLinks {
+        display: block;
+      }
+      .menu {
+        display: none;
+      }
+    .navContainer img {
+        margin: 0;
+        padding-top: 0;
+    }
+    .nonmobile-navbar {
+        margin-right: 50px;
+    }
+    .nonmobile-navbar ul li {
+        padding: 0 20px;
+    }
+    .applyNowNav {
+        color: #fafafa;
+        background-color: transparent;
+        border: 1px solid #fafafa;
+        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+      }
+      .applyNowNav:hover {
+        color: white;
+        text-decoration: none;
+        border: 1px solid white;
+        background-color: #203040;
+      }
+}

@@ -1,0 +1,129 @@
+.navBar {
+    position: relative;
+}
+
+.navBar button {
+    background: transparent;
+    border: none;
+}
+
+.menuNav {
+    overflow-y: scroll;
+    list-style: none;
+    height: 100vh;
+    position: fixed;
+    background-color: #384F5D;
+    /* border: 2px solid #384F5D; */
+    right: -40px;
+    bottom: 0;
+    width: 0;
+    overflow: hidden;
+    max-width: 230px;
+    z-index: 9;
+    box-shadow: -8px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+  
+.menuNav.showMenu {
+    width: 100%;
+}
+  
+.menuNav li:first-child {
+    margin-top: 10rem;
+    margin-left: 10px;
+}
+
+.menuNav li:not(:first-child) {
+    margin: 50px 10px;
+}
+
+.menuNav li:last-child {
+    margin: 50px 1px;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 50px;
+    z-index: 10;
+}
+
+.hamburger > span {
+    width: 2rem;
+    height: 0.25rem;
+    border-radius: 10px;
+    position: relative;
+    background-color: white;
+}
+
+.notHamburger {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    right: 30px;
+    top: 35px;
+    z-index: 10;
+}
+
+.close-x {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0) 43%,
+        #fff 45%,
+        #fff 55%,
+        rgba(0, 0, 0, 0) 57%,
+        rgba(0, 0, 0, 0) 100%
+        ),
+        linear-gradient(
+        135deg,
+        transparent 0%,
+        transparent 43%,
+        #fff 45%,
+        #fff 55%,
+        transparent 57%,
+        transparent 100%
+    );
+}
+.nonMobileNavLinks {
+    display: none;
+}
+
+NavLink, .navlinkA {
+    color: #fafafa;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.applyNowNavMenu {
+    color: #203040;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+    padding: 11px 13px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  .applyNowNavMenu:hover {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    background-color: #203040;
+  }
