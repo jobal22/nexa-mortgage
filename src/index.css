@@ -10,3 +10,9 @@ body {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+
+.noMatch-container {
+  margin-top: 150px;
+  margin-bottom: 80px;
+  text-align: center;
+}
