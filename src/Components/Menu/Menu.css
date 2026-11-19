@@ -20,12 +20,13 @@
     overflow: hidden;
     max-width: 230px;
     z-index: 9;
-    box-shadow: -8px 4px 12px rgba(0, 0, 0, 0.25);
 }
 
   
 .menuNav.showMenu {
     width: 100%;
+    box-shadow: -8px 4px 12px rgba(0, 0, 0, 0.25);
+
 }
   
 .menuNav li:first-child {

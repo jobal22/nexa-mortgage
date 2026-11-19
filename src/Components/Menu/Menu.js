@@ -36,7 +36,7 @@ export default function Menu() {
             Home
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink
             to="/loan-programs"
             activeclassname="active-link"
@@ -45,7 +45,7 @@ export default function Menu() {
           >
             Loan Programs
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <a
             href="https://nexamortgage.com/privacy-policy/"

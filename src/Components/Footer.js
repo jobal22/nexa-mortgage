@@ -45,9 +45,9 @@ function Footer() {
             <div className='nexa-contact-container nexaResources fc-container'>
                 <p className='nccp'>Resources</p>
                 <div className='nexa-contact-container-contained'>
-                    <div className='nexa-contact-container1 nicHR nexaResouresLink'>
+                    {/* <div className='nexa-contact-container1 nicHR nexaResouresLink'>
                         <a href="/loan-programs">Loan Programs</a>
-                    </div>
+                    </div> */}
                     <div className='nexa-contact-container1 nicHR nexaResouresLink'>
                         <a href="https://nexamortgage.com/privacy-policy/" target="_blank" rel="noreferrer">Privacy Policy</a>
                     </div>
