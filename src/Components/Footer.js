@@ -3,6 +3,7 @@ import './Footer.css'
 import logo from '../img/White NEXA 300dpi.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faLocationDot, faPhone, faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import equalHousing from '../img/equal-housing-lender.png'
 
 function Footer() {
   return (
@@ -60,6 +61,10 @@ function Footer() {
             </div>
         </div>
         <div className='footer-container-1'>
+            <img src={equalHousing} alt="equal housing opportunity"/>
+            <p>This is not an offer to enter into an agreement. Not all customers will qualify. Information, rates and programs are subject to change without notice. All products are subject to credit and property approval. Other restrictions and limitations may apply.</p>
+            <p>Copyright © 2026 | NEXA Lending</p>
+            <p>Licensed In: GA | NMLS #2906269 | NMLS ID 1660690 | AZ BANKER license: BK-2006218</p>
             <p>© Copyright - Jonathan Baldwin - Mortgage Loan Originator</p>
         </div>
     </div>
