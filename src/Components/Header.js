@@ -14,7 +14,7 @@ function Header() {
                 {/* <li><a href="/loan-programs">Loan Programs</a></li> */}
                 <li><a href="https://nexamortgage.com/privacy-policy/" target="_blank" rel="noreferrer">Privacy Policy</a></li>
                 {profile.map((p) => (
-                <li><a href="/coding" className='applyNowNav' href={p.loanLink} key={p.id} target="_blank" rel="noreferrer">Apply Now</a></li>
+                <li key={p.id}><a href="/coding" className='applyNowNav' href={p.loanLink} key={p.id} target="_blank" rel="noreferrer">Apply Now</a></li>
                 ))}
             </ul>
         </nav>
