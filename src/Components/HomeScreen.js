@@ -6,7 +6,8 @@ import LoanTypes from './LoanTypes'
 function HomeScreen() {
   return (
    <div>
-    <div className='homescreen-container'>
+      <div className='homescreen-container'>
+        <div  className='hs-desktop-container'>
           <img src={personal} alt="portrait of Jonathan Baldwin" className='homescreen-container-img'/>
           <div className='homescreen-container-info-box'>
               <h1>Jonathan Baldwin</h1>
@@ -22,6 +23,7 @@ function HomeScreen() {
                 Apply Now
               </a>
           </div>
+        </div>
       </div>
       <LoanTypes className='loanTypes-large'/>
     </div>

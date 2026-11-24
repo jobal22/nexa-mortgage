@@ -88,6 +88,10 @@
 }
 
 @media screen and (min-width: 800px) {
+    .loanTypes-container {
+        margin-top: 0px;
+    }
+    
     .loanTypes-example-container {
         max-width: 1000px;
         margin-left: auto;
