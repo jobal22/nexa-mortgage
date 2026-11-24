@@ -9,9 +9,16 @@ function LoanTypes() {
     <div className='loanTypes-container'>
         <div className='loanTypes-title-container'>
             <div className='lttc'>
-                <h1>As your mortage broker:</h1>
+                <p>
+                    <span className='lt-first'>As your mortage broker:</span>
+                    <span className='lt-second'> I have access to over</span>
+                    <span className='lt-third'> 200</span>
+                    <span className='lt-fourth'> mortgage lenders</span>
+                    <span className='lt-fifth'> and countless programs to fit your unique needs.</span>
+                </p>
+                {/* <h1>As your mortage broker:</h1>
                 <h2>I have access to over <span>200 mortgage lenders</span></h2>
-                <p>and countless programs to fit your unique needs.</p>
+                <p>and countless programs to fit your unique needs.</p> */}
             </div>
         </div>
         <div className='loanTypes-container-main'>

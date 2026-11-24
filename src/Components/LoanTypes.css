@@ -1,6 +1,4 @@
 .loanTypes-container {
-    /* margin: 50px 15px; */
-    margin-top: 80px;
     text-align: center;
 }
 
@@ -19,21 +17,6 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-.loanTypes-title-container h1 {
-    font-size: 20px;
-    margin: 0;
-}
-
-.loanTypes-title-container h2 {
-    font-size: 18px;
-    margin: 0;
-}
-
-.loanTypes-title-container h2 span {
-    text-transform: uppercase;
-    font-size: 20px;
-}
-
 .loanTypes-title-container p {
     margin: 0;
     margin: 0 auto;
@@ -41,11 +24,23 @@
     max-width: 500px;
 }
 
-/* .loanTypes-title-container > h2 {
-    text-transform: uppercase;
+.lt-first {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.lt-second, .lt-fourth {
     font-size: 18px;
-    margin-right: 0.4em;
-} */
+}
+
+.lt-third {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.lt-fifth {
+    font-size: 15px;
+}
 
 .loanTypes-container-main {
     background-color: #fafafa;
@@ -88,17 +83,55 @@
 }
 
 @media screen and (min-width: 800px) {
-    .loanTypes-container {
-        margin-top: 0px;
-    }
-    
     .loanTypes-example-container {
-        max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
     }
 
+    .loanTypes-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .loanTypes-title-container {
+        flex: 1;
+        align-content: center;
+    }
+
     .lttc {
         padding: 30px 10px;
+        min-width: 300px;
+        max-width: 600px;
+        height: 400px;
+        align-content: center;
+    }
+
+    .loanTypes-container-main {
+        flex: 2;
+    }
+
+    .loanTypes-title-container p {
+        margin: 0;
+        margin: 0 auto;
+        padding: 0 10px;
+        text-wrap: pretty;
+    }
+    
+    .lt-first {
+        font-size: clamp(2rem, 4vw, 2.5rem);  
+        font-weight: bold;
+    }
+    
+    .lt-second, .lt-fourth {
+        font-size: clamp(1.75rem, 4vw, 2.25rem);  
+    }
+    
+    .lt-third {
+        font-size: clamp(3rem, 4vw, 3rem);  
+        font-weight: bold;
+    }
+    
+    .lt-fifth {
+        font-size: clamp(1rem, 4vw, 2rem);  
     }
 }

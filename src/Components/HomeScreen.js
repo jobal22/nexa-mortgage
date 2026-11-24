@@ -1,6 +1,6 @@
 import React from 'react'
 import "./HomeScreen.css"
-import personal from '../img/personal.jpg' 
+import personal from '../img/personal-crop.png' 
 import LoanTypes from './LoanTypes'
 
 function HomeScreen() {
